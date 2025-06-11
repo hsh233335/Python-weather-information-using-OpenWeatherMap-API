@@ -11,7 +11,7 @@ Shows the current weather information using OpenWeatherMap API and tkinter messa
 ## Step 1:
 Download the Python file.
 ## Step 2 (Optional (to use Ollama AI mentioned above):
-Go to https://ollama.com/.
+Go to https://ollama.com/download
 ## Step 3 (Optional (to use Ollama AI mentioned above):
 Download the installation file depending on your operating system, and follow instructions on-screen.
 ## Step 4 (Optional (to use Ollama AI mentioned above):
