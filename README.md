@@ -43,4 +43,9 @@ Enjoy!
 ![Capture100](https://github.com/user-attachments/assets/ae458d55-9f67-41be-aa94-1e4f83d0ca69) <br> <br>
 ![Screenshot 2025-06-11 145102](https://github.com/user-attachments/assets/09262f2a-aa13-4ea8-9276-d44c78dbf728) <br> <br>
 ![Screenshot 2025-06-11 145122](https://github.com/user-attachments/assets/e233ecc8-ecd1-45a7-9f6a-627af7f7b984) <br> <br>
-![Screenshot 2025-06-11 145147](https://github.com/user-attachments/assets/a1bc4d8f-90e7-4780-8367-53279017418f)
+![Screenshot 2025-06-11 145147](https://github.com/user-attachments/assets/a1bc4d8f-90e7-4780-8367-53279017418f) <br> <br>
+After you click ok: <br> <br>
+![Screenshot 2025-06-11 145528](https://github.com/user-attachments/assets/6f8e97ce-a3a6-42e3-90d8-e6c410641d92) <br> <br>
+Then after clicking exit (the cross): <br> <br>
+![Capture101](https://github.com/user-attachments/assets/5bf42325-be9d-4ec6-ac47-0bda0aa82390) <br> <br>
+If you click **"Yes" the program will close**. **If no, it will return to the previous page**.
