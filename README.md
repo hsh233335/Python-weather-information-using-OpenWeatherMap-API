@@ -24,7 +24,7 @@ and this:
 ollama pull llama3
 ```
 ## Step 5 (Required from now on):
-Go to https://home.openweathermap.org/users/sign_up, and **create an account**. **If you already have an account**, go to https://home.openweathermap.org/api_keys, and copy the Api Key.
+Go to https://home.openweathermap.org/users/sign_up, and **create an account**. **If you already have an account**, go to https://home.openweathermap.org/api_keys, and copy the API Key.
 ## Step 6:
 Replace the API Key at the **YOUR API KEY** text in code line 55.
 ## Step 7:
