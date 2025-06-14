@@ -52,7 +52,7 @@ Then after clicking exit (the cross): <br> <br>
 If you click **"Yes" the program will close**. **If no, it will return to the previous page**.
 
 # Updates
-- The sentence: "It is also saved as weatherlog.txt at Desktop." is added to weather information tkinter messagebox to show that a weather log file is added. <br> <br>
+- The sentence: "It is also saved as weatherlog.txt at the directory this Python file is in" is added to weather information tkinter messagebox to show that a weather log file is added. <br> <br>
   ![Capture105](https://github.com/user-attachments/assets/9062e945-9551-4511-a489-8fea3172ada5) <br> <br>
 - Added a log file feature that logs the weather information from the tkinter messagebox previously. <br> <br>
   ![Capture106](https://github.com/user-attachments/assets/9aeaaa51-aac4-47a9-8c38-6baa2bdf497a) <br> <br>
