@@ -1,4 +1,5 @@
 import requests
+import os
 from ollama import chat
 from ollama import ChatResponse
 from tkinter import simpledialog
@@ -7,7 +8,7 @@ from tkinter import messagebox
 # Loop for the program.
 while True:
     # Get user's input.
-    location = simpledialog.askstring("Location Information:", "Type exit or enter a city or type \"my location weather details\" without the quotation marks or talk to ai? just type ai:")
+    location = simpledialog.askstring("Location Information:", "Type exit or enter a city or talk to ai? just type ai:")
     if location is None:
         question0 = messagebox.askyesno("Question:", "Are you sure?")
         if question0 is True:
@@ -19,22 +20,22 @@ while True:
         break
     
     # Ask Ai about anything mode. (Only uncomment when you want to ask ai.)
-    # elif location.lower() == "ai":
-    #     question = simpledialog.askstring("Question:", "What do you like to ask ai?")
-    #     if question is None:
-    #         question1 = messagebox.askyesno("Question:", "Are you sure?")
-    #         if question1 is True:
-    #             break
-    #         else:
-    #             continue
-    #     answer: ChatResponse = chat(model= "llama3", messages= [
-    #         {
-    #             'role': 'user',
-    #             'content': question,
-    #         },
-    #     ])
-    #     messagebox.showinfo("Ai's response:", answer.message.content)
-    #     continue
+    elif location.lower() == "ai":
+        question = simpledialog.askstring("Question:", "What do you like to ask ai?")
+        if question is None:
+            question1 = messagebox.askyesno("Question:", "Are you sure?")
+            if question1 is True:
+                break
+            else:
+                continue
+        answer: ChatResponse = chat(model= "llama3", messages= [
+            {
+                'role': 'user',
+                'content': question,
+            },
+        ])
+        messagebox.showinfo("Ai's response:", answer.message.content)
+        continue
 
     measurement = simpledialog.askstring("Measurement:", "Enter a measurement unit (metric/imperial):")
     if measurement is None:
@@ -52,7 +53,7 @@ while True:
             continue
 
     # Get weather data from Openweathermap api.
-    response = requests.get(f"http://api.openweathermap.org/data/2.5/weather?q={location}&APPID=YOURAPIKEY&units={measurement}")
+    response = requests.get(f"http://api.openweathermap.org/data/2.5/weather?q={location}&APPID=244874abd02bc7d3b293026b7478955f&units={measurement}")
     data = response.json()
 
     if response.status_code == 404:
@@ -84,18 +85,43 @@ while True:
         # Show the current weather information from Openweathermap api.
         messagebox.showinfo("Weather information:", 
             f"Location: {place} \n"
-            f"The location of your city is {place}, and the country is {country}. \n"
+            f"The location of your city is {place}, and the country is {country}.\n"
             f"The longitude of your city is {longitude}. \n"
             f"The latitude of your city is {latitude}. \n"
             f"The weather of your city is {weather}. \n"
             f"Your wind in your city is {convertwind} m/s. \n"
             f"The humidity of your city is {humid}%.\n"
             f"Your temperature is {temp}°{'C' if unit == 'celsius' else 'F'}.\n"
-            f"Your temperature (feels like) is {converttemp}°{'C' if unit == 'celsius' else 'F'}."
+            f"Your temperature (feels like) is {converttemp}°{'C' if unit == 'celsius' else 'F'}.\n \n"
+            "It is also saved as weatherlog.txt at Desktop."
         )
 
-    
+        # Creates a weatherlog.txt file after showing the current weather information.
+        with open('weatherlog.txt', 'a', encoding= "utf-8") as weather_log:
+            weather_log.writelines(["Weather information: \n"
+            f"Location: {place} \n"
+            f"The location of your city is {place}, and the country is {country}.\n"
+            f"The longitude of your city is {longitude}. \n"
+            f"The latitude of your city is {latitude}. \n"
+            f"The weather of your city is {weather}. \n"
+            f"Your wind in your city is {convertwind} m/s. \n"
+            f"The humidity of your city is {humid}%.\n"
+            f"Your temperature is {temp}°{'C' if unit == 'celsius' else 'F'}.\n"
+            f"Your temperature (feels like) is {converttemp}°{'C' if unit == 'celsius' else 'F'}. \n \n"])
+
+        # Asks you if you want to delete the log file.
+        question4 = messagebox.askyesno("Question:", "Do you want to delete the log file?")
+        if question4 is True:
+            try:
+                os.remove("weatherlog.txt")
+                messagebox.showinfo("Information:", "Your weatherlog.txt file is successfully deleted.")
+            except (FileNotFoundError, PermissionError):
+                messagebox.showerror("Error!", "The weather log file couldn't be deleted. \n Please check if your weatherlog.txt file is in the same directory and try again later.")
+                continue
+        else:
+            continue
+
     except (KeyError, NameError):
         messagebox.showerror("Error!", "City not found and information cannot be displayed!")
-    except (ValueError):
-        messagebox.showerror("Error!", "Inputs you previously entered must be a string only.")
+    except ValueError:
+        messagebox.showerror("Error!", "Inputs you entered previously must be a string.")
