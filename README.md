@@ -44,9 +44,19 @@ Enjoy!
 ![Capture100](https://github.com/user-attachments/assets/ae458d55-9f67-41be-aa94-1e4f83d0ca69) <br> <br>
 ![Screenshot 2025-06-11 145102](https://github.com/user-attachments/assets/09262f2a-aa13-4ea8-9276-d44c78dbf728) <br> <br>
 ![Screenshot 2025-06-11 145122](https://github.com/user-attachments/assets/e233ecc8-ecd1-45a7-9f6a-627af7f7b984) <br> <br>
-![Screenshot 2025-06-11 145147](https://github.com/user-attachments/assets/a1bc4d8f-90e7-4780-8367-53279017418f) <br> <br>
+![Capture106](https://github.com/user-attachments/assets/4d93566b-b80b-4585-99a9-c03a01adab9f) <br> <br>
 After you click ok: <br> <br>
 ![Screenshot 2025-06-11 145528](https://github.com/user-attachments/assets/6f8e97ce-a3a6-42e3-90d8-e6c410641d92) <br> <br>
 Then after clicking exit (the cross): <br> <br>
 ![Capture101](https://github.com/user-attachments/assets/5bf42325-be9d-4ec6-ac47-0bda0aa82390) <br> <br>
 If you click **"Yes" the program will close**. **If no, it will return to the previous page**.
+
+# Updates
+- The sentence: "It is also saved as weatherlog.txt at Desktop." is added to weather information tkinter messagebox to show that a weather log file is added. <br> <br>
+  ![Capture105](https://github.com/user-attachments/assets/9062e945-9551-4511-a489-8fea3172ada5) <br> <br>
+- Added a log file feature that logs the weather information from the tkinter messagebox previously. <br> <br>
+  ![Capture106](https://github.com/user-attachments/assets/9aeaaa51-aac4-47a9-8c38-6baa2bdf497a) <br> <br>
+- Added a log file deleter that asks you if you want to delete the log file. (Will come after weather information messagebox) <br> <br>
+  ![Capture103](https://github.com/user-attachments/assets/5a628341-5fb5-4b0c-b815-3cfd1f61722b) <br> <br>
+  **If you press yes, this screen below will show. Or if you pressed no, it will return to the first page.** <br> <br>
+  ![Capture104](https://github.com/user-attachments/assets/5dbe0b80-81b1-4707-b05b-9b5c5edbcc93)
