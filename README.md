@@ -53,9 +53,9 @@ If you click **"Yes" the program will close**. **If no, it will return to the pr
 
 # Updates
 - The sentence: "It is also saved as weatherlog.txt at the directory this Python file is in" is added to weather information tkinter messagebox to show that a weather log file is added. <br> <br>
-  ![Capture105](https://github.com/user-attachments/assets/9062e945-9551-4511-a489-8fea3172ada5) <br> <br>
+  ![Capture107](https://github.com/user-attachments/assets/6935c247-8232-4329-920e-d7b01bd188bd) <br> <br>
 - Added a log file feature that logs the weather information from the tkinter messagebox previously. <br> <br>
-  ![Capture106](https://github.com/user-attachments/assets/9aeaaa51-aac4-47a9-8c38-6baa2bdf497a) <br> <br>
+ ![Capture108](https://github.com/user-attachments/assets/b667ac6d-cc0a-4ca0-bc9d-321b9e959da7) <br> <br>
 - Added a log file deleter that asks you if you want to delete the log file. (Will come after weather information messagebox) <br> <br>
   ![Capture103](https://github.com/user-attachments/assets/5a628341-5fb5-4b0c-b815-3cfd1f61722b) <br> <br>
   **If you press yes, this screen below will show. Or if you pressed no, it will return to the first page.** <br> <br>
