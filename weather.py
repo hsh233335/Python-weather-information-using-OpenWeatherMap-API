@@ -93,7 +93,7 @@ while True:
             f"The humidity of your city is {humid}%.\n"
             f"Your temperature is {temp}°{'C' if unit == 'celsius' else 'F'}.\n"
             f"Your temperature (feels like) is {converttemp}°{'C' if unit == 'celsius' else 'F'}.\n \n"
-            "It is also saved as weatherlog.txt at Desktop."
+            "It is also saved as weatherlog.txt at the directory this Python file is in"
         )
 
         # Creates a weatherlog.txt file after showing the current weather information.
