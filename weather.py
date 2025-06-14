@@ -53,7 +53,7 @@ while True:
             continue
 
     # Get weather data from Openweathermap api.
-    response = requests.get(f"http://api.openweathermap.org/data/2.5/weather?q={location}&APPID=244874abd02bc7d3b293026b7478955f&units={measurement}")
+    response = requests.get(f"http://api.openweathermap.org/data/2.5/weather?q={location}&APPID=YOURAPIKEY&units={measurement}")
     data = response.json()
 
     if response.status_code == 404:
