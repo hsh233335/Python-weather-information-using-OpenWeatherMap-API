@@ -124,4 +124,8 @@ while True:
     except (KeyError, NameError):
         messagebox.showerror("Error!", "City not found and information cannot be displayed! \n Or you didn't uncomment lines 23-38 for Ollama AI. \n If you don't have Ollama AI please look at how to install it in the github repository. \n If not, please don't use AI.")
     except ValueError:
-        messagebox.showerror("Error!", "Inputs you entered previously must be a string.")
+        messagebox.showerror("Error!", "Inputs you entered previously must be a string. \n Or did you use a wrong type of Ollama AI?")
+    except ModuleNotFoundError:
+        messagebox.showerror("Error!", "Didn't you run pip install ollama?")
+    except ConnectionError:
+        messagebox.showerror("Error!", "Ollama isn't installed from https://www.ollama.com/download")
