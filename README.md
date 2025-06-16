@@ -46,7 +46,7 @@ Enjoy, run with
 git clone https://github.com/hsh233335/Python-weather-information-using-OpenWeatherMap-API
 ```
 
-# Example (Exactly how the program will prompt you)
+# Example Usage:
 ![Capture100](https://github.com/user-attachments/assets/ae458d55-9f67-41be-aa94-1e4f83d0ca69) <br> <br>
 ![Screenshot 2025-06-11 145102](https://github.com/user-attachments/assets/09262f2a-aa13-4ea8-9276-d44c78dbf728) <br> <br>
 ![Screenshot 2025-06-11 145122](https://github.com/user-attachments/assets/e233ecc8-ecd1-45a7-9f6a-627af7f7b984) <br> <br>
