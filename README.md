@@ -78,3 +78,4 @@ If you click **"Yes" the program will close**. **If no, it will return to the pr
   ![Capture104](https://github.com/user-attachments/assets/5dbe0b80-81b1-4707-b05b-9b5c5edbcc93) <br> <br>
   Then will return you. <br> <br>
   ![Screenshot 2025-06-11 145528](https://github.com/user-attachments/assets/6f8e97ce-a3a6-42e3-90d8-e6c410641d92)
+***Note: All of the pictures above are in Windows 10.****
