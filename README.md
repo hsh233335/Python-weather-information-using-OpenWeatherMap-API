@@ -40,7 +40,8 @@ pythonw weather.py
 ## Step 8:
 Enjoy, run with
 ```
-git clone
+git clone https://github.com/hsh233335/Python-weather-information-using-OpenWeatherMap-API
+```
 
 # Example (Exactly how the program will prompt you)
 ![Capture100](https://github.com/user-attachments/assets/ae458d55-9f67-41be-aa94-1e4f83d0ca69) <br> <br>
