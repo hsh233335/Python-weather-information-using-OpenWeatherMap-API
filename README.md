@@ -8,11 +8,17 @@ Shows the current weather information using OpenWeatherMap API and tkinter messa
 - Warning: ***Celsius goes with metric input and Fahrenheit goes with imperial input***.
 - ***Optional: Has an AI to chat. (using Ollama and requires windows 10 or later)***
 # Requirements
-Python 3 and above. Git. <br> **If you don't have git, press the green code button and the top and click "Download ZIP".
-After that, extract the file and follow the steps below. (I would recommend moving the downloaded and extracted file to Desktop, get the python file out of the extracted folder.)**
-# How do I run this code?
+Python 3 and above.
 ## Step 1:
 Download the Python file.
+Using:
+```
+git clone https://github.com/hsh233335/Python-weather-information-using-OpenWeatherMap-API
+```
+or **if you don't have git, press the green code button and the top and click "Download ZIP".
+After that, extract the file and follow the steps below. (I would recommend moving the downloaded and extracted file to Desktop, get the python file out of the extracted folder.)**
+# How do I run this code?
+
 ## Step 2 (Optional (to use Ollama AI mentioned above):
 Go to https://ollama.com/download
 ## Step 3 (Optional (to use Ollama AI mentioned above):
@@ -46,10 +52,7 @@ or without terminal view run:
 pythonw weather.py
 ```
 ## Step 9:
-Enjoy, run with
-```
-git clone https://github.com/hsh233335/Python-weather-information-using-OpenWeatherMap-API
-```
+Enjoy!
 
 # Example Usage:
 ![Capture100](https://github.com/user-attachments/assets/ae458d55-9f67-41be-aa94-1e4f83d0ca69) <br> <br>
