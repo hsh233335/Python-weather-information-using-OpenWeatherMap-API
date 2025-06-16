@@ -15,7 +15,7 @@ Using:
 ```
 git clone https://github.com/hsh233335/Python-weather-information-using-OpenWeatherMap-API
 ```
-or **if you don't have git, press the green code button and the top and click "Download ZIP".
+or <br> **if you don't have git, press the green code button and the top and click "Download ZIP".
 After that, extract the file and follow the steps below. (I would recommend moving the downloaded and extracted file to Desktop, get the python file out of the extracted folder.)**
 # How do I run this code?
 
