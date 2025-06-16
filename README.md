@@ -1,14 +1,18 @@
 # Python-weather-information-using-OpenWeatherMap-API
 # Description
 Shows the current weather information using OpenWeatherMap API and tkinter messagebox.
+
 # What it does:
 - Sends you a tkinter messagebox about the current weather.
 - Shows an error when something goes wrong.
 - Has 2 temperature types to choose from: **Celsius and Fahrenheit**.
 - Warning: ***Celsius goes with metric input and Fahrenheit goes with imperial input***.
 - ***Optional: Has an AI to chat. (using Ollama and requires windows 10 or later)***
+
 # Requirements
 Python 3 and above.
+
+# How do I run this code?
 ## Step 1:
 Download the Python file.
 Using:
@@ -17,8 +21,6 @@ git clone https://github.com/hsh233335/Python-weather-information-using-OpenWeat
 ```
 or **if you don't have git, press the green code button and the top and click "Download ZIP".
 After that, extract the file and follow the steps below. (I would recommend moving the downloaded and extracted file to Desktop, get the python file out of the extracted folder.)**
-# How do I run this code?
-
 ## Step 2 (Optional (to use Ollama AI mentioned above):
 Go to https://ollama.com/download
 ## Step 3 (Optional (to use Ollama AI mentioned above):
