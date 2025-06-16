@@ -57,11 +57,13 @@ while True:
     data = response.json()
 
     if response.status_code == 404:
-        messagebox.showerror("Error", "City not found!")
+        messagebox.showerror("Error!", "City not found!")
     elif response.status_code == 502:
         messagebox.showerror("Error!", "Bad Gateway \n Try again later.")
     elif response.status_code != 200:
         messagebox.showerror("Error!", "Try again later.")
+    elif response.status_code == 429:
+        messagebox.showerror("Error!", "Too many requests. \n Try again tommorow.")
 
     # Exception clause to handle user's input for the city name not found.
     try:
