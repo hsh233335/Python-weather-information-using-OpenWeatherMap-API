@@ -20,22 +20,22 @@ while True:
         break
     
     # Ask Ai about anything mode. (Only uncomment when you want to ask ai.)
-    elif location.lower() == "ai":
-        question = simpledialog.askstring("Question:", "What do you like to ask ai?")
-        if question is None:
-            question1 = messagebox.askyesno("Question:", "Are you sure?")
-            if question1 is True:
-                break
-            else:
-                continue
-        answer: ChatResponse = chat(model= "llama3", messages= [
-            {
-                'role': 'user',
-                'content': question,
-            },
-        ])
-        messagebox.showinfo("Ai's response:", answer.message.content)
-        continue
+    # elif location.lower() == "ai":
+    #     question = simpledialog.askstring("Question:", "What do you like to ask ai?")
+    #     if question is None:
+    #         question1 = messagebox.askyesno("Question:", "Are you sure?")
+    #         if question1 is True:
+    #             break
+    #         else:
+    #             continue
+    #     answer: ChatResponse = chat(model= "llama3", messages= [
+    #         {
+    #             'role': 'user',
+    #             'content': question,
+    #         },
+    #     ])
+    #     messagebox.showinfo("Ai's response:", answer.message.content)
+    #     continue
 
     measurement = simpledialog.askstring("Measurement:", "Enter a measurement unit (metric/imperial):")
     if measurement is None:
@@ -122,6 +122,6 @@ while True:
             continue
 
     except (KeyError, NameError):
-        messagebox.showerror("Error!", "City not found and information cannot be displayed!")
+        messagebox.showerror("Error!", "City not found and information cannot be displayed! \n Or you didn't uncomment lines 23-38 for Ollama AI. \n If you don't have Ollama AI please look at how to install it in the github repository. \n If not, please don't use AI.")
     except ValueError:
         messagebox.showerror("Error!", "Inputs you entered previously must be a string.")
