@@ -7,6 +7,9 @@ Shows the current weather information using OpenWeatherMap API and tkinter messa
 - Has 2 temperature types to choose from: **Celsius and Fahrenheit**.
 - Warning: ***Celsius goes with metric input and Fahrenheit goes with imperial input***.
 - ***Optional: Has an AI to chat. (using Ollama and requires windows 10 or later)***
+# Requirements
+Python 3 and above. Git. If you don't have git, download the file here: <br>
+https://drive.google.com/file/d/1Z_M6L_-NBHgrVnxDbFVCLVNbU8aoI1V2/view?usp=drive_link
 # How do I run this code?
 ## Step 1:
 Download the Python file.
