@@ -31,7 +31,12 @@ After that uncomment line 23-38.
 Go to https://home.openweathermap.org/users/sign_up, and **create an account**. **If you already have an account**, go to https://home.openweathermap.org/api_keys, and copy the API Key.
 ## Step 6:
 Replace the API Key at the **YOUR API KEY** text in code line 56.
-## Step 7:
+## Step 7 IMPORTANT!:
+Run 
+```
+pip install requests
+```
+## Step 8:
 Run 
 ```
 python weather.py
@@ -40,7 +45,7 @@ or without terminal view run:
 ```
 pythonw weather.py
 ```
-## Step 8:
+## Step 9:
 Enjoy, run with
 ```
 git clone https://github.com/hsh233335/Python-weather-information-using-OpenWeatherMap-API
