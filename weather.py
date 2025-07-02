@@ -1,7 +1,7 @@
 import requests
 import os
-from ollama import chat
-from ollama import ChatResponse
+# from ollama import chat
+# from ollama import ChatResponse
 from tkinter import simpledialog
 from tkinter import messagebox
 
